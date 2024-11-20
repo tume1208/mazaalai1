@@ -24,8 +24,9 @@ let generateCartItems = () => {
                             <div id=${id} class="quantity">${item}</div>
                             <div>ширхэг</div>
                             <i onclick="decrement(${id})" class="fa-solid fa-minus"></i>
-                        </button></td> 
-                <td><h3>₮ ${item * product.price}</h3></td>
+                        </button>
+                        <div class="trash"><i onclick="removeItem(${id})" id="bar" class="fa-solid fa-trash"></i></td> </div>
+                <td><h3> ${item * product.price}₮</h3></td>
             </tbody> 
             </table>
                 `;
@@ -78,5 +79,10 @@ let update = (id) => {
 let removeItem = (id) => {
     basket = basket.filter((x) => x.id !== id);
     generateCartItems();
-    localStorage.setItem("data", JSON.stringify(basket));
+    updateLocalStorage();
 };
+let updateLocalStorage = () => { 
+    localStorage.setItem("data", JSON.stringify(basket)); 
+};
+generateCartItems();
+
