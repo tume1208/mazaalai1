@@ -25,7 +25,7 @@ let generateCartItems = () => {
                             <div>ширхэг</div>
                             <i onclick="decrement(${id})" class="fa-solid fa-minus"></i>
                         </button>
-                        <div class="trash"><i onclick="removeItem(${id})" id="bar" class="fa-solid fa-trash"></i></td> </div>
+                        <div class="trash"><i onclick="removeItem(${id})" id="bar" class="fa-solid fa-trash"></i> </div></td>
                 <td><h3> ${item * product.price}₮</h3></td>
             </tbody> 
             </table>
