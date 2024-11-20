@@ -23,6 +23,7 @@ let shopItemsData = [
         price:84000,
         desc:"sa",
         img:"15.webp",
+        images: ["40.jpg", "41.jpg", "42.jpg", "16.png"],
         link:"sproduct1.html"
     },
     {
@@ -30,7 +31,9 @@ let shopItemsData = [
         name:"1st Control Tonic",
         price:128000,
         desc:"dce",
-        img:"17.png"
+        img:"17.png",
+        images: ["40.jpg", "41.jpg", "42.jpg", "16.png"],
+        link:"sproduct1.html"
     },
     {
         id:"5",
